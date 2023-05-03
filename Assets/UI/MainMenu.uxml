@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); opacity: 1; align-items: flex-start; align-self: center; width: 165px; justify-content: space-around; height: 362px;">
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="align-self: center; align-items: stretch; justify-content: space-around; top: 26%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
