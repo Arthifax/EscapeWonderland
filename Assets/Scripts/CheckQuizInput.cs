@@ -9,7 +9,7 @@ public class CheckQuizInput : MonoBehaviour
 {
 
     public TMP_Text questionText;
-    public TMP_InputField inputFieldText;
+    public TMP_Text inputFieldText;
     public int currentQuestion = 1;
     public int maxQuestions;
     public List<String> questions;
@@ -25,9 +25,7 @@ public class CheckQuizInput : MonoBehaviour
     
     public void CheckQuestion()
     {
-        Debug.Log(maxQuestions);
-        Debug.Log(currentQuestion);
-        Debug.Log(answers[currentQuestion]);
+        Debug.Log(inputFieldText.text);
         if (answers[currentQuestion].Equals(inputFieldText.text))
         {
             if (answers[currentQuestion].Equals(inputFieldText.text) && currentQuestion == maxQuestions - 1)
