@@ -33,6 +33,7 @@ public class CheckQuizInput : MonoBehaviour
                 Debug.Log("Done!");
                 pictures[currentQuestion].SetActive(true);
                 questionText.text = "Je hebt gewonnen!";
+                victoryScreen.SetActive(true);
             }
             else
             {
