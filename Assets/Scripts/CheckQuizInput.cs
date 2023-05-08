@@ -32,7 +32,7 @@ public class CheckQuizInput : MonoBehaviour
             {
                 Debug.Log("Done!");
                 pictures[currentQuestion].SetActive(true);
-                questionText.text = "Je hebt gewonnen!";
+                questionText.text = "Dat heb je geweldig bedacht! Dit zal je verder helpen op je pad";
                 victoryScreen.SetActive(true);
             }
             else

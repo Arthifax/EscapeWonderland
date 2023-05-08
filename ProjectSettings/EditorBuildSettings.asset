@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 63029670b1240aa4b90fd141a43ccc37
   - enabled: 1
-    path: Assets/Scenes/Level2Cheshire.unity
+    path: Assets/Scenes/Level2Cookies.unity
+    guid: 5274b97bea94c7a45a31f4cb4ee531d9
+  - enabled: 1
+    path: Assets/Scenes/Level3Cheshire.unity
     guid: 3d69fae2ff24f9544b1666bb56f290e4
   m_configObjects: {}
