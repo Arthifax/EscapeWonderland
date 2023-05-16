@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,7 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &154166954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ RectTransform:
   m_GameObject: {fileID: 154166953}
   m_LocalRotation: {x: -0, y: -0, z: -0.70710707, w: 0.70710653}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.8756747, y: 2.8756747, z: 2.8756747}
+  m_LocalScale: {x: 2.6469147, y: 2.6469147, z: 2.6469147}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1903416944}
@@ -613,7 +613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 306}
+  m_AnchoredPosition: {x: 0, y: 259}
   m_SizeDelta: {x: 455, y: 301}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154166955
@@ -738,16 +738,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 154166953}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1551772138}
+        m_TargetAssemblyTypeName: CookieGameManager, Assembly-CSharp
+        m_MethodName: CheckQuizAnswer
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: d
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &176890296
@@ -922,8 +922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Als je ze eet dan groei of krimp je vlug, maar voor de juiste volgorde
-    lees je de woorden een aantal stappen terug
+  m_text: Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 94eaed69f5c20ba458d0f11fa1300c94, type: 2}
   m_sharedMaterial: {fileID: 1597406518280752103, guid: 94eaed69f5c20ba458d0f11fa1300c94,
@@ -1429,11 +1428,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999775f8c87ddba4cb151ab023a0b0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookieOrderNumber: 5
+  cookieOrderNumber: 4
   gameManager: {fileID: 1551772138}
   quizCard: {fileID: 154166953}
   quizText: {fileID: 1903416945}
-  storyText: {fileID: 283321366}
 --- !u!1 &408751231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,8 +1745,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555080588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.038513}
+  m_LocalScale: {x: 0.82322, y: 0.82322, z: 0.82322}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 844600463}
@@ -1761,7 +1759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -366}
+  m_AnchoredPosition: {x: 0.53033, y: -373.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555080590
@@ -2135,11 +2133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999775f8c87ddba4cb151ab023a0b0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookieOrderNumber: 2
+  cookieOrderNumber: 1
   gameManager: {fileID: 1551772138}
   quizCard: {fileID: 154166953}
   quizText: {fileID: 1903416945}
-  storyText: {fileID: 283321366}
 --- !u!1 &626576733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,11 +3606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999775f8c87ddba4cb151ab023a0b0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookieOrderNumber: 3
+  cookieOrderNumber: 2
   gameManager: {fileID: 1551772138}
   quizCard: {fileID: 154166953}
   quizText: {fileID: 1903416945}
-  storyText: {fileID: 283321366}
 --- !u!1 &991210841
 GameObject:
   m_ObjectHideFlags: 0
@@ -6135,11 +6131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999775f8c87ddba4cb151ab023a0b0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookieOrderNumber: 4
+  cookieOrderNumber: 3
   gameManager: {fileID: 1551772138}
   quizCard: {fileID: 154166953}
   quizText: {fileID: 1903416945}
-  storyText: {fileID: 283321366}
 --- !u!1 &1118422460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7007,7 +7002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1447905484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7037,7 +7032,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 72}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1541450692
@@ -7174,7 +7169,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad69dfeb6e5f9194187b9dc7d09a08bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentQuestion: 1
+  currentQuestion: 0
+  questionCard: {fileID: 154166953}
+  quizText: {fileID: 1903416945}
+  storyText: {fileID: 283321366}
+  quizQuestions: []
+  correctAnswers:
+  - a
+  - b
+  - c
+  - d
+  - a
 --- !u!4 &1551772139
 Transform:
   m_ObjectHideFlags: 0
@@ -7593,7 +7598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 631}
+  m_AnchoredPosition: {x: 0, y: 718}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1903416943
@@ -7816,16 +7821,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 154166953}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1551772138}
+        m_TargetAssemblyTypeName: CookieGameManager, Assembly-CSharp
+        m_MethodName: CheckQuizAnswer
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: a
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1925909515
@@ -8236,11 +8241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999775f8c87ddba4cb151ab023a0b0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookieOrderNumber: 1
+  cookieOrderNumber: 0
   gameManager: {fileID: 1551772138}
   quizCard: {fileID: 154166953}
   quizText: {fileID: 1903416945}
-  storyText: {fileID: 283321366}
 --- !u!1 &2086058003
 GameObject:
   m_ObjectHideFlags: 0
@@ -8325,16 +8329,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 154166953}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1551772138}
+        m_TargetAssemblyTypeName: CookieGameManager, Assembly-CSharp
+        m_MethodName: CheckQuizAnswer
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: c
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2086058006
@@ -8459,16 +8463,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 154166953}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1551772138}
+        m_TargetAssemblyTypeName: CookieGameManager, Assembly-CSharp
+        m_MethodName: CheckQuizAnswer
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: b
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2136010096
