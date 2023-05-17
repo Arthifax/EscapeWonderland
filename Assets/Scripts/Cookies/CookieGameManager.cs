@@ -9,8 +9,12 @@ public class CookieGameManager : MonoBehaviour
     public GameObject questionCard;
     [SerializeField] private TMP_Text quizText;
     [SerializeField] private TMP_Text storyText;
+    [SerializeField] GameObject gameProps;
+    [SerializeField] GameObject endButton;
     public string[] quizQuestions;
     public string[] correctAnswers;
+
+    
 
 
     public void CheckQuizAnswer(string answer)
@@ -20,6 +24,10 @@ public class CookieGameManager : MonoBehaviour
             Debug.Log("Bingo");
             storyText.text = "Nice!";
             currentQuestion++;
+            if(currentQuestion == correctAnswers.Length)
+            {
+                EndQuiz();
+            }
             questionCard.SetActive(false);
         }
         else if(answer != correctAnswers[currentQuestion])
@@ -27,5 +35,12 @@ public class CookieGameManager : MonoBehaviour
             Debug.Log("Boo!");
             storyText.text = "Uh oh";
         }
+    }
+
+    public void EndQuiz()
+    {
+        storyText.text = "Alice: Dit is hem! Deze gaat mij kleiner maken!";
+        gameProps.SetActive(false);
+        endButton.SetActive(true);
     }
 }
