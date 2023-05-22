@@ -795,9 +795,9 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: TMP_PRESENT
-    Standalone: TMP_PRESENT
-    WebGL: TMP_PRESENT
+    Android: TMP_PRESENT;USE_CINEMACHINE
+    Standalone: TMP_PRESENT;USE_CINEMACHINE
+    WebGL: TMP_PRESENT;USE_CINEMACHINE;MODULAR_3D_TEXT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
